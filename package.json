@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "description": "Игры разума",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "brain-games": "bin/brain-games.js"
   },
+  "test": "echo \"Error: no test specified\" && exit 1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Luce62006/frontend-project-lvl1.git"
