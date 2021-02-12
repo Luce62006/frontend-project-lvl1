@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 // eslint-disable-next-line import/prefer-default-export
 export const EvenGame = (name) => {
   const correct = 0;
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const min = 1;
     const max = 100;
     const item = Math.random() * (+max - +min) + min;
