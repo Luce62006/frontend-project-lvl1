@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 
-// eslint-disable-next-line import/prefer-default-export
-export const EvenGame = (name) => {
+const EvenGame = (name) => {
   const correct = 0;
   for (let i = 0; i < 3; i += 1) {
     const min = 1;
@@ -15,3 +14,5 @@ export const EvenGame = (name) => {
   }
   if (correct === 3) { console.log(`Hello, ${name}!`); }
 };
+
+export default EvenGame;
