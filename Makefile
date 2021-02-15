@@ -13,3 +13,4 @@ publish:
  
 lint:
     npx eslint .    
+indent_style = tab
