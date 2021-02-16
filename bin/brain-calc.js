@@ -29,14 +29,12 @@ const getSign = (number1, sign, number2) => {
 
 const gameInThreeQuestions = () => {
   for (let i = 1; i < 4; i += 1) {
-    const number1 = getRandomNum(1, 20);
-    const number2 = getRandomNum(1, 20);
+    const number1 = getRandomNum(1, 10);
+    const number2 = getRandomNum(1, 10);
     const sign = getSignOfMathOperation('+-*');
-    console.log(sign);
     const question = (`${number1} ${sign} ${number2}`);
     console.log(`Question: ${question}`);
     const theCorrectAnswer = getSign(number1, sign, number2);
-    console.log(theCorrectAnswer);
     const answerOfUser = readlineSync.question(`Your answer: ${''}`);
     if (Number(answerOfUser) === theCorrectAnswer) {
       console.log('Correct!');
