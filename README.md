@@ -6,3 +6,4 @@
 
 https://github.com/Luce62006/frontend-project-lvl1/workflows/badge.svg
 
+https://asciinema.org/a/NOQjbtVa2lrlnBOqsgAXv4yAe
