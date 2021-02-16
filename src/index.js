@@ -12,14 +12,10 @@ const engine = (description, getQuestionAndCorrectAnswer) => {
   console.log(description);
   console.log();
 
-  // 3-й этап - запрос имени у пользователя
+  // 3-й этап - запрос имени у пользователя,приветствие пользователя
   const name = getName();
 
-  // 4-й этап - приветствие пользователя
-  console.log(`Hello, ${name}!`);
-  console.log();
-
-  // 5-й этап - играем раунды
+  // 4-й этап - играем раунды
   for (let i = 1; i <= roundsNumber; i += 1) {
     const [question, correctAnswer] = getQuestionAndCorrectAnswer();
     console.log(`Question: ${question}`);
