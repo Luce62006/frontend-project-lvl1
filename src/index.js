@@ -8,12 +8,12 @@ const engine = (description, getQuestionAndCorrectAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log();
 
-  // 2-й этап - вывод описания игры
+  // 2-й этап - запрос имени у пользователя,приветствие пользователя
+  const name = getName();
+
+  // 3-й этап - вывод описания игры
   console.log(description);
   console.log();
-
-  // 3-й этап - запрос имени у пользователя,приветствие пользователя
-  const name = getName();
 
   // 4-й этап - играем раунды
   for (let i = 1; i <= roundsNumber; i += 1) {
