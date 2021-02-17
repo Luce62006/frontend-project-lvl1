@@ -22,6 +22,7 @@ const gcd = (num1, num2) => {
   }
   return Math.max(...array3);
 };
+
 const getQuestionAndCorrectAnswer = () => {
   const number1 = getRandomNum(1, 30);
   const number2 = getRandomNum(1, 30);

@@ -1,5 +1,3 @@
-import gcd from "./src/games/gcd"
-
 install:
     npm install
 
