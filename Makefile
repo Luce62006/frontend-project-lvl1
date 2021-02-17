@@ -1,5 +1,3 @@
-import progression from "./src/games/progression"
-
 install:
     npm install
 
