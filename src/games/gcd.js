@@ -27,7 +27,7 @@ const getQuestionAndCorrectAnswer = () => {
   const number1 = getRandomNum(1, 30);
   const number2 = getRandomNum(1, 30);
   const question = `${number1},${number2}`;
-  const correctAnswer = gcd(number1, number2);
+  const correctAnswer = String(gcd(number1, number2));
   const gcdGameInfo = [question, correctAnswer];
   return gcdGameInfo;
 };

@@ -1,3 +1,5 @@
+import progression from "./src/games/progression"
+
 install:
     npm install
 
@@ -11,7 +13,10 @@ brain-calc:
 		node bin/brain-calc.js
 
 brain-gcd:
-    node bin/brain-gcd.js 		
+		node bin/brain-gcd.js 
+
+brain-progression:	
+    node bin/brain-progression.js 	
 
 publish:
     npm publish --dry-run
