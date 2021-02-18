@@ -15,12 +15,10 @@ const gcd = (num1, num2) => {
       array2.push(i);
     }
   }
-  for (const i of array1) {
-    if (array2.includes(i)) {
-      array3.push(i);
-    }
-  }
-  return Math.max(...array3);
+  array1.forEach((i) => ((array2.includes(i))
+    ? array3.push(i) : array3));
+
+  return Math.max(array3);
 };
 
 const getQuestionAndCorrectAnswer = () => {
