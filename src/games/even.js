@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import engine from '../index.js';
 import getRandomNum from '../utils.js';
 
