@@ -15,9 +15,7 @@ const gcd = (num1, num2) => {
       array2.push(i);
     }
   }
-  array1.forEach((i) => ((array2.includes(i))
-    ? array3.push(i) : array3));
-
+  array1.forEach((i) => ((array2.includes(i)) ? array3.push(i) : array3));
   return Math.max(array3);
 };
 
