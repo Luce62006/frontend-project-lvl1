@@ -13,7 +13,7 @@ const getQuestionAndCorrectAnswer = () => {
   }
   const indexOfHiddenNum = getRandomNum(0, 9);
   const correctAnswear = progressNum.splice(indexOfHiddenNum, 1, '..');
-  const progressionGameInfo = [progressNum, correctAnswear];
+  const progressionGameInfo = [progressNum, String(correctAnswear)];
   return progressionGameInfo;
 };
 

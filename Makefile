@@ -1,3 +1,5 @@
+import prime from "./src/games/prime"
+
 install:
     npm install
 
@@ -16,6 +18,8 @@ brain-gcd:
 brain-progression:	
     node bin/brain-progression.js 	
 
+brain-prime:
+    node bin/brain-prime.js		
 publish:
     npm publish --dry-run
  
