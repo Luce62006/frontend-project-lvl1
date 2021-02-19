@@ -13,8 +13,8 @@ const getQuestionAndCorrectAnswer = () => {
   }
   const indexOfHiddenNum = getRandomNum(0, 9);
   const correctAnswear = progressNum.splice(indexOfHiddenNum, 1, '..');
-  const progressionGameInfo = [progressNum, String(correctAnswear)];
-  return progressionGameInfo;
+  const questionProgressNum = (`${progressNum[0]} ${progressNum[1]} ${progressNum[2]} ${progressNum[3]} ${progressNum[4]} ${progressNum[5]} ${progressNum[6]} ${progressNum[7]} ${progressNum[8]} ${progressNum[9]}`);
+  return [questionProgressNum, String(correctAnswear)];
 };
 
 export default () => engine(description, getQuestionAndCorrectAnswer);
