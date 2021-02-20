@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-import GetName from '../cli.js';
+/* eslint-disable no-console */
 
+import GetName from '../cli';
+
+// custom console
 console.log('Welcome to the Brain Games!');
 GetName();

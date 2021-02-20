@@ -1,5 +1,5 @@
-import engine from '../index.js';
-import getRandomNum from '../utils.js';
+import engine from '../index';
+import getRandomNum from '../utils';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
