@@ -1,5 +1,5 @@
-import engine from '../index';
-import getRandomNum from '../utils';
+import engine from '../index.js';
+import getRandomNum from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 

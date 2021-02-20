@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import readlineSync from 'readline-sync';
-import getName from '../cli';
+import getName from '../cli.js';
 
 const roundsNumber = 3;
 
