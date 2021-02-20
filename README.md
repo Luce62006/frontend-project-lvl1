@@ -15,6 +15,6 @@ https://github.com/Luce62006/frontend-project-lvl1/Super-Linter/badge.svg
 
 Пример запуска игры Brain-gcd.  https://asciinema.org/a/dyJFJ7ah57ehbMSCNYPejjN38
 
-Пример запуска игры Brain-even.  https://asciinema.org/a/wNdQ7c8RUio9eKf4IKsMeHESJ
+Пример запуска игры Brain-progression.  https://asciinema.org/a/wNdQ7c8RUio9eKf4IKsMeHESJ
 
-Пример запуска игры Brain-even.  https://asciinema.org/a/h5mtaIO2rHUzy95eGCEto5k9g
+Пример запуска игры Brain-prime.  https://asciinema.org/a/h5mtaIO2rHUzy95eGCEto5k9g
