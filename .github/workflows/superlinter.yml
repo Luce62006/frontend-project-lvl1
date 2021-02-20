@@ -11,6 +11,6 @@ jobs:
           node-version: '14.x'
       - run: make install
       - run: make lint
-name: Super-Linter
+
 
 
