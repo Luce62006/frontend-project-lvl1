@@ -7,6 +7,10 @@
 
 <a href="https://codeclimate.com/github/Luce62006/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/fec0e1c21b59fa4a9e1c/maintainability" /></a>
 
+https://github.com/<OWNER>/<REPOSITORY>/actions/workflows//badge.svg
+  
+  https://github.com/github/docs/actions/workflows/main.yml/badge.svg
+
 https://github.com/Luce62006/frontend-project-lvl1/Super-Linter/badge.svg
 
 Пример запуска игры Brain-even.  https://asciinema.org/a/NOQjbtVa2lrlnBOqsgAXv4yAe
