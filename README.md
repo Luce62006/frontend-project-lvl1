@@ -11,7 +11,7 @@ https://github.com/Luce62006/frontend-project-lvl1/Super-Linter/badge.svg
 
 Пример запуска игры Brain-even.  https://asciinema.org/a/NOQjbtVa2lrlnBOqsgAXv4yAe
 
-Пример запуска игры Brain-even.  https://asciinema.org/a/PAg6JaUU3aPpshzolgj6Fv9Xj
+Пример запуска игры Brain-calc.  https://asciinema.org/a/PAg6JaUU3aPpshzolgj6Fv9Xj
 
 Пример запуска игры Brain-even.  https://asciinema.org/a/dyJFJ7ah57ehbMSCNYPejjN38
 
