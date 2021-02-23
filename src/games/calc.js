@@ -1,10 +1,9 @@
 import engine from '../index.js';
 import getRandomNum from '../utils.js';
 
-const getSignOfMathOperation = (mathSign) => (
-  mathSign.charAt(getRandomNum(0, String(mathSign).length - 1)));
+const getSignOfMathOperation = (mathSigns) => mathSigns[getRandomNum(0, mathSigns.length - 1)];
 
-const getSign = (number1, sign, number2) => {
+const getCorrectAnswer = (number1, sign, number2) => {
   let result;
   switch (sign) {
     case '+':
@@ -27,12 +26,10 @@ const getQuestionAndCorrectAnswer = () => {
   const number1 = getRandomNum(1, 30);
   const number2 = getRandomNum(1, 30);
   const signOfMathOperation = getSignOfMathOperation(mathSign);
-  const correctAnswer = getSign(number1, signOfMathOperation, number2);
+  const correctAnswer = getCorrectAnswer(number1, signOfMathOperation, number2);
   const question = `${number1} ${signOfMathOperation} ${number2}`;
   const newCorrectAnswer = String(correctAnswer);
-  const calcGameInfo = [question, newCorrectAnswer];
-
-  return calcGameInfo;
+  return [question, newCorrectAnswer];
 };
 
 export default () => engine(description, getQuestionAndCorrectAnswer);
