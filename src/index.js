@@ -22,7 +22,7 @@ const getEngine = (description, getQuestionAndCorrectAnswer) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer! Correct answer is '${correctAnswer}'.`);
+      console.log(`'${answer}' is wrong answer! Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
