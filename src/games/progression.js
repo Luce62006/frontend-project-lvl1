@@ -1,19 +1,19 @@
 import engine from '../index.js';
-import getRandomNum from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
 const getQuestionAndCorrectAnswer = () => {
-  let ferstNum = getRandomNum(2, 7);
-  const diffbetwenNum = getRandomNum(2, 5);
-  const progressNum = [];
+  let FirstNumber = getRandomNumber(2, 7);
+  const DiffBetweenNumbers = getRandomNumber(2, 5);
+  const progression = [];
   for (let i = 0; i < 10; i += 1) {
-    ferstNum += diffbetwenNum;
-    progressNum.push(ferstNum);
+    FirstNumber += DiffBetweenNumbers;
+    progression.push(FirstNumber);
   }
-  const indexOfHiddenNum = getRandomNum(0, 9);
-  const correctAnswear = progressNum.splice(indexOfHiddenNum, 1, '..');
-  const questionProgressNum = (`${progressNum[0]} ${progressNum[1]} ${progressNum[2]} ${progressNum[3]} ${progressNum[4]} ${progressNum[5]} ${progressNum[6]} ${progressNum[7]} ${progressNum[8]} ${progressNum[9]}`);
+  const indexOfHiddenItem = getRandomNumber(0, 9);
+  const correctAnswear = progression.splice(indexOfHiddenItem, 1, '..');
+  const questionProgressNum = progression.join(` `);
   return [questionProgressNum, String(correctAnswear)];
 };
 
