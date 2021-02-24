@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import engine from '../src/games/prime.js';
+import getEngine from '../src/games/prime.js';
 
-engine();
+getEngine();

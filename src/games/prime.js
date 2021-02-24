@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import getEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -21,4 +21,4 @@ const getQuestionAndCorrectAnswer = () => {
   return infoPrimeGame;
 };
 
-export default () => engine(description, getQuestionAndCorrectAnswer);
+export default () => getEngine(description, getQuestionAndCorrectAnswer);

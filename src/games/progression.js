@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import getEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
@@ -17,4 +17,4 @@ const getQuestionAndCorrectAnswer = () => {
   return [questionProgressNum, String(correctAnswear)];
 };
 
-export default () => engine(description, getQuestionAndCorrectAnswer);
+export default () => getEngine(description, getQuestionAndCorrectAnswer);
