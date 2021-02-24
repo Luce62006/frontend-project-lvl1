@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import getEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -12,12 +12,12 @@ const getGcd = (number1, number2) => {
 };
 
 const getQuestionAndCorrectAnswer = () => {
-  const number1 = getRandomNum(1, 30);
-  const number2 = getRandomNum(1, 30);
+  const number1 = getRandomNumber(1, 30);
+  const number2 = getRandomNumber(1, 30);
   const question = `${number1} ${number2}`;
   const correctAnswer = String(getGcd(number1, number2));
   const gcdGameInfo = [question, correctAnswer];
   return gcdGameInfo;
 };
 
-export default () => engine(description, getQuestionAndCorrectAnswer);
+export default () => getEngine(description, getQuestionAndCorrectAnswer);

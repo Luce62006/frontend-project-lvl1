@@ -1,5 +1,5 @@
 /* eslint-disable default-case */
-import engine from '../index.js';
+import getEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const getSignOfMathOperation = (mathSigns) => mathSigns[getRandomNumber(0, mathSigns.length - 1)];
@@ -17,6 +17,7 @@ const getCorrectAnswer = (number1, sign, number2) => {
       result = number1 * number2;
       return result;
   }
+  return result;
 };
 
 const description = 'What is the result of the expression?';
@@ -31,4 +32,4 @@ const getQuestionAndCorrectAnswer = () => {
   return [question, newCorrectAnswer];
 };
 
-export default () => engine(description, getQuestionAndCorrectAnswer);
+export default () => getEngine(description, getQuestionAndCorrectAnswer);
