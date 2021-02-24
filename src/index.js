@@ -6,7 +6,7 @@ const numberOfRounds = 3;
 
 const getEngine = (description, getQuestionAndCorrectAnswer) => {
   // 1-й этап - вывод общеигрового приветствия
-  console.log('Welcome to the Brain Games!\n');
+  console.log('Welcome to the Brain Games!');
 
   // 2-й этап - запрос имени у пользователя,приветствие пользователя
   const name = getUsernameAndGreeting();
