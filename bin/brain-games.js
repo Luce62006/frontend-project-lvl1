@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getUsernameAndGreeting from '../src/games/even.js';
+import getUsernameAndGreeting from '../src/cli.js';
 
 getUsernameAndGreeting();
