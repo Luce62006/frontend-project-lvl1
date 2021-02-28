@@ -1,4 +1,4 @@
-import getEngine from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -10,4 +10,4 @@ const getQuestionAndCorrectAnswer = () => {
   return [question, CorrectAnswer];
 };
 
-export default () => getEngine(description, getQuestionAndCorrectAnswer);
+export default () => runEngine(description, getQuestionAndCorrectAnswer);

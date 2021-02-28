@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getEngine from '../src/games/calc.js';
+import runEngine from '../src/games/calc.js';
 
-getEngine();
+runEngine();

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getEngine from '../src/games/progression.js';
+import runEngine from '../src/games/progression.js';
 
-getEngine();
+runEngine();

@@ -4,7 +4,7 @@ import getUsernameAndGreeting from './cli.js';
 
 const numberOfRounds = 3;
 
-const getEngine = (description, getQuestionAndCorrectAnswer) => {
+const runEngine = (description, getQuestionAndCorrectAnswer) => {
   // 1-й этап - вывод общеигрового приветствия
   console.log('Welcome to the Brain Games!');
 
@@ -30,4 +30,4 @@ const getEngine = (description, getQuestionAndCorrectAnswer) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export default getEngine;
+export default runEngine;

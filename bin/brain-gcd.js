@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getEngine from '../src/games/gcd.js';
+import runEngine from '../src/games/gcd.js';
 
-getEngine();
+runEngine();
