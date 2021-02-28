@@ -8,16 +8,14 @@ const getCorrectAnswer = (number1, sign, number2) => {
   let result;
   switch (sign) {
     case '+':
-      result = number1 + number2;
-      return result;
-    case ('-'):
-      result = number1 - number2;
-      return result;
-    case ('*'):
-      result = number1 * number2;
-      return result;
+      return number1 + number2;
+    case '-':
+      return number1 - number2;
+    case '*':
+      return number1 * number2;
+    default:
+      return null;
   }
-  return result;
 };
 
 const description = 'What is the result of the expression?';

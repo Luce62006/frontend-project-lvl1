@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
 import getUsernameAndGreeting from './cli.js';
 
