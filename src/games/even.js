@@ -6,8 +6,8 @@ const getCorrectAnswer = (question) => ((question % 2 === 0) ? 'yes' : 'no');
 
 const getQuestionAndCorrectAnswer = () => {
   const question = getRandomNumber(1, 100);
-  const CorrectAnswer = getCorrectAnswer(question);
-  return [question, CorrectAnswer];
+  const correctAnswer = getCorrectAnswer(question);
+  return [question, correctAnswer];
 };
 
 export default () => runEngine(description, getQuestionAndCorrectAnswer);
