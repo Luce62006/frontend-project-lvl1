@@ -2,10 +2,9 @@
 import runEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const getSignOfMathOperation = (mathSignss) => mathSignss[getRandomNumber(0, mathSignss.length - 1)];
+const getSignOfMathOperation = (mathSigns) => mathSigns[getRandomNumber(0, mathSigns.length - 1)];
 
 const getCorrectAnswer = (number1, sign, number2) => {
-  let result;
   switch (sign) {
     case '+':
       return number1 + number2;
