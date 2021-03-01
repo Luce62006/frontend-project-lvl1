@@ -3,16 +3,23 @@ import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
-const getQuestionAndCorrectAnswer = () => {
-  let FirstNumber = getRandomNumber(2, 7);
-  const DiffBetweenNumbers = getRandomNumber(2, 5);
+const getProgression = (num) => {
+  const diffBetweenNumbers = getRandomNumber(2, 5);
   const progression = [];
-  for (let i = 0; i < 10; i += 1) {
-    FirstNumber += DiffBetweenNumbers;
-    progression.push(FirstNumber);
+  let firstNumber = num;
+  const progressionLength = 10;
+  for (let i = 0; i < progressionLength; i += 1) {
+    firstNumber += diffBetweenNumbers;
+    progression.push(firstNumber);
   }
-  const indexOfHiddenItem = getRandomNumber(0, 9);
-  const correctAnswear = progression.splice(indexOfHiddenItem, 1, '..');
+  return progression;
+};
+
+const getQuestionAndCorrectAnswer = () => {
+  const firstNumber = getRandomNumber(2, 7);
+  const hiddenItemIndex = getRandomNumber(0, 9);
+  const progression = getProgression(firstNumber);
+  const correctAnswear = progression.splice(hiddenItemIndex, 1, '..');
   const questionProgressNum = progression.join(' ');
   return [questionProgressNum, String(correctAnswear)];
 };
