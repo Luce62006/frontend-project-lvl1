@@ -12,7 +12,6 @@
 
 [![linter](<https://github.com/Luce62006/frontend-project-lvl1/workflows/linter/badge.svg>)](<https://github.com/Luce62006/frontend-project-lvl1/workflows/linter/badge.svg>)
 
-https://github.com/Luce62006/frontend-project-lvl1/workflows/linter/badge.svg
 
   
 Пример запуска игры Brain-even.  <https://asciinema.org/a/NOQjbtVa2lrlnBOqsgAXv4yAe>
