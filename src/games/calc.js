@@ -2,9 +2,11 @@
 import runEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const getSignOfMathOperation = (mathSigns) => mathSigns[getRandomNumber(0, mathSigns.length - 1)];
+const description = 'What is the result of the expression?';
 
-const getCorrectAnswer = (number1, sign, number2) => {
+const getRandomElement = (mathSigns) => mathSigns[getRandomNumber(0, mathSigns.length - 1)];
+
+const getMathOperation = (number1, sign, number2) => {
   switch (sign) {
     case '+':
       return number1 + number2;
@@ -17,14 +19,13 @@ const getCorrectAnswer = (number1, sign, number2) => {
   }
 };
 
-const description = 'What is the result of the expression?';
 const getQuestionAndCorrectAnswer = () => {
-  const mathSigns = '-+*';
+  const signOfMathOperation = '-+*';
   const number1 = getRandomNumber(1, 30);
   const number2 = getRandomNumber(1, 30);
-  const signOfMathOperation = getSignOfMathOperation(mathSigns);
-  const correctAnswer = getCorrectAnswer(number1, signOfMathOperation, number2);
-  const question = `${number1} ${signOfMathOperation} ${number2}`;
+  const mathOperation = getRandomElement(signOfMathOperation);
+  const correctAnswer = getMathOperation(number1, signOfMathOperation, number2);
+  const question = `${number1} ${mathOperation} ${number2}`;
   return [question, String(correctAnswer)];
 };
 
