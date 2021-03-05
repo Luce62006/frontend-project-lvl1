@@ -19,9 +19,9 @@ const getQuestionAndCorrectAnswer = () => {
   const progressionLength = 10;
   const hiddenItemIndex = getRandomNumber(0, 9);
   const progression = getProgression(firstNumber, progressionLength, diffBetweenNumbers);
-  const correctAnswear = progression.splice(hiddenItemIndex, 1, '..');
-  const questionProgressNum = progression.join(' ');
-  return [questionProgressNum, String(correctAnswear)];
+  const correctAnswer = progression.splice(hiddenItemIndex, 1, '..');
+  const question = progression.join(' ');
+  return [question, String(correctAnswer)];
 };
 
 export default () => runEngine(description, getQuestionAndCorrectAnswer);

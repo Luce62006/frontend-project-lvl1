@@ -18,11 +18,11 @@ function isPrime(question) {
   return correctAnswer;
 }
 
-const getQuestionAndCorrectAnswer = () => {
+function getQuestionAndCorrectAnswer() {
   const question = getRandomNumber(3, 150);
   const correctAnswer = isPrime(question);
   const infoPrimeGame = [question, correctAnswer];
   return infoPrimeGame;
-};
+}
 
 export default () => runEngine(description, getQuestionAndCorrectAnswer);

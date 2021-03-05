@@ -7,7 +7,7 @@ const runEngine = (description, getQuestionAndCorrectAnswer) => {
   // 1-й этап - вывод общеигрового приветствия
   console.log('Welcome to the Brain Games!');
 
-  // 2-й этап - запрос имени у пользователя,приветствие пользователя
+  // 2-й этап - приветствие пользователя
   const name = getUsernameAndGreeting();
 
   // 3-й этап - вывод описания игры
