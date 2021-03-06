@@ -3,24 +3,21 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime(question) {
-  let correctAnswer = '';
-  const sqrtOfNumber = Math.sqrt(question);
-  for (let i = 2; i <= Math.round(sqrtOfNumber); i += 1) {
+const isPrime = (question) => {
+  if (question < 2) {
+    return false;
+  }
+  for (let i = 2; i <= question / 2; i += 1) {
     if (question % i === 0) {
-      correctAnswer = 'no';
-      break;
-    }
-    if (question % i !== 0) {
-      correctAnswer = 'yes';
+      return false;
     }
   }
-  return correctAnswer;
-}
+  return true;
+};
 
 function getQuestionAndCorrectAnswer() {
   const question = getRandomNumber(3, 150);
-  const correctAnswer = isPrime(question);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   const infoPrimeGame = [question, correctAnswer];
   return infoPrimeGame;
 }
