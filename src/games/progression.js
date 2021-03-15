@@ -17,7 +17,7 @@ const getQuestionAndCorrectAnswer = () => {
   const firstNumber = getRandomNumber(2, 7);
   const diffBetweenNumbers = getRandomNumber(2, 5);
   const progressionLength = 10;
-  const hiddenItemIndex = getRandomNumber(0, progressionLength);
+  const hiddenItemIndex = getRandomNumber(0, progressionLength - 1);
   const progression = getProgression(firstNumber, progressionLength, diffBetweenNumbers);
   const correctAnswer = progression.splice(hiddenItemIndex, 1, '..');
   const question = progression.join(' ');
